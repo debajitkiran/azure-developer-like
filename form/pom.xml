@@ -82,13 +82,13 @@
           <schemaVersion>v2</schemaVersion>  
           <subscriptionId>16cfc856-c2f1-4103-80c3-8deba1743963</subscriptionId>  
           <resourceGroup>rg_trainee_11</resourceGroup>  
-          <appName>az204wb11</appName>  
+          <appName>az204wbapp11</appName>  
           <pricingTier>P1v3</pricingTier>  
           <region>westeurope</region>  
-          <appServicePlanName>ASP-rgtrainee11-85d1</appServicePlanName>  
+          <appServicePlanName>ASP-rgtrainee11-89cb</appServicePlanName>  
           <appServicePlanResourceGroup>rg_trainee_11</appServicePlanResourceGroup>  
           <runtime> 
-            <os>Linux</os>  
+            <os>Windows</os>  
             <javaVersion>17.0.2</javaVersion>  
             <webContainer>Java SE</webContainer> 
           </runtime>  
