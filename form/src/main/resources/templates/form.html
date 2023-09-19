@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html xmlns:th="https://www.thymeleaf.org">
 <head> 
-    <title>Formulaire</title>
+    <title>Feedback form</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" th:href="@{/styles/form.css}"> 
 </head>
@@ -13,7 +13,7 @@
     <form action="#" th:action="@{/save}" th:object="${form}" method="post">
     	<p>Title <br><input type="text" th:field="*{title}" class="input"/></p>
         <p>Comment <br> <textarea type="text" th:field="*{comment}" class="textarea" rows="10" /></p>
-        <p><input type="submit" value="Submit" class="button" /> </p>
+        <p><input type="submit" value="Provide Your Feedback" class="button" /> </p>
     </form>
 </body>
 </html>
