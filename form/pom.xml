@@ -74,7 +74,6 @@
         <artifactId>azure-webapp-maven-plugin</artifactId>
         <version>2.5.0</version>
         <configuration>
-          <schemaVersion>v2</schemaVersion>
           <schemaVersion>v2</schemaVersion>  
           <subscriptionId>16cfc856-c2f1-4103-80c3-8deba1743963</subscriptionId>  
           <resourceGroup>rg_trainee_12</resourceGroup>  
@@ -85,7 +84,7 @@
           <appServicePlanResourceGroup>rg_trainee_12</appServicePlanResourceGroup>
           <runtime>
             <os>Linux</os>
-            <javaVersion>17.0.2</javaVersion>
+            <javaVersion>Java 17</javaVersion>
             <webContainer>Java SE</webContainer>
           </runtime>
           <deployment>

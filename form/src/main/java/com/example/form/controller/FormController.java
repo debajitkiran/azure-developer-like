@@ -2,6 +2,7 @@ package com.example.form.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.oauth2.client.authentication.OAuth2AuthenticationToken;
+import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -19,6 +20,8 @@ public class FormController {
 	
 	@GetMapping("/")
 	 public String greetingForm(Model model, OAuth2AuthenticationToken auth) {
+		OAuth2User principal = auth.getPrincipal();
+		String userId = principal.getAttribute("oid");
 	    model.addAttribute("form", new Form());
 	    model.addAttribute("appTitle", appTitle);
 	    model.addAttribute("userName", auth.getName());
@@ -27,6 +30,8 @@ public class FormController {
 	
 	@PostMapping("/save")
 	public String saveForm(@ModelAttribute Form form, Model model, OAuth2AuthenticationToken auth) {
+		OAuth2User principal = auth.getPrincipal();
+		String userId = principal.getAttribute("oid");
 		model.addAttribute("form",form);
 		model.addAttribute("appTitle", appTitle);
 		model.addAttribute("userName", auth.getName());
