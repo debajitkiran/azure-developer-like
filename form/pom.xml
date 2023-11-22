@@ -85,13 +85,13 @@
         <version>2.5.0</version>
         <configuration>
           <schemaVersion>v2</schemaVersion>
-          <subscriptionId>99ca975a-968f-4867-a08d-3fafe11d9b2c</subscriptionId>  
-          <resourceGroup>rg_trainee_01</resourceGroup>  
-          <appName>afklm-az-204-webapp-01</appName>  
+          <subscriptionId>16cfc856-c2f1-4103-80c3-8deba1743963</subscriptionId>  
+          <resourceGroup>rg_trainee_12</resourceGroup>  
+          <appName>af-klm-az-204-wa-12</appName>  
           <pricingTier>B1</pricingTier>  
           <region>westeurope</region>  
-          <appServicePlanName>afklm-az-204-asp-01</appServicePlanName>  
-          <appServicePlanResourceGroup>rg_trainee_01</appServicePlanResourceGroup> 
+          <appServicePlanName>af-klm-az-204-asp-12</appServicePlanName>  
+          <appServicePlanResourceGroup>rg_trainee_12</appServicePlanResourceGroup> 
           <runtime> 
             <os>Linux</os>
             <javaVersion>Java 17</javaVersion>
